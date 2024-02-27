@@ -1,0 +1,23 @@
+.aparelho-card {
+    display: inline-block;
+    vertical-align: top;
+    width: 200px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .aparelho-card img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+  }
+  
+  .aparelho-card h3 {
+    font-size: 18px;
+    margin-bottom: 5px;
+  }
+  
+  .aparelho-card p {
+    font-size: 14px;
+  }
+  

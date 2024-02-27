@@ -1,0 +1,411 @@
+/* arquivo: aparencia.css */
+
+/* Estilos gerais */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Estilos para o cabeçalho */
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 1vh; /* Alterado para vh */
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 1vh; /* Alterado para vh */
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+/* Estilos para o banner */
+.banner {
+  background-image: url('banner.jpg');
+  background-size: cover;
+  color: #fff;
+  text-align: center;
+  padding: 5vh 0; /* Alterado para vh */
+}
+
+.banner h1 {
+  font-size: 2vh; /* Alterado para vh */
+  margin-bottom: 1vh; /* Alterado para vh */
+}
+
+.banner p {
+  font-size: 2vh; /* Alterado para vh */
+}
+
+/* Estilos para os aparelhos */
+.aparelhos {
+  margin: 5vh auto; /* Alterado para vh */
+  max-width: 800px;
+}
+
+.aparelho-card {
+  background-color: #f2f2f2;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 2vh;
+  margin-bottom: 2vh;
+}
+
+.aparelho-card img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 1vh; /* Alterado para vh */
+}
+
+.aparelho-card h3 {
+  font-size: 2vh; /* Alterado para vh */
+  margin-bottom: 1vh; /* Alterado para vh */
+}
+
+.aparelho-card p {
+  font-size: 1.6vh; /* Alterado para vh */
+}
+
+/* Estilos para o rodapé */
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 1vh; /* Alterado para vh */
+  text-align: center;
+}
+
+/* Posicionamento dos links de login e registro */
+.nav-right {
+  margin-left: auto;
+  margin-right: 1vh; /* Alterado para vh */
+}
+
+.nav-right li {
+  display: inline-block;
+}
+
+/* Estilos adicionais para os links de login e registro */
+.nav-right li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+/* Estilos do app.component.css */
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #ffbb00; /* Fundo amarelo */
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+
+header {
+  background-color: #000;
+  color: #fff;
+  padding: 1vh; /* Alterado para vh */
+}
+
+header ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+header ul li {
+  display: inline-block;
+  margin-right: 1vh; /* Alterado para vh */
+}
+
+header ul li a {
+  text-decoration: none;
+  color: #fff;
+  padding: 0.5vh; /* Alterado para vh */
+}
+
+header ul li a:hover {
+  background-color: #fff;
+  color: #000;
+}
+
+main {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffbb00; /* Fundo amarelo */
+}
+
+footer {
+  background-color: #000;
+  color: #fff;
+  padding: 1vh; /* Alterado para vh */
+  text-align: center;
+  margin-top: auto; /* Adicionado para fixar o rodapé na parte inferior */
+}
+
+/* Estilos do servicos.component.css */
+.aparelho-card {
+  text-align: center;
+  margin-bottom: 2vh;
+}
+
+.nome-aparelho {
+  background-color: #fff;
+  color: #333;
+  font-weight: bold;
+  padding: 1vh;
+  margin-bottom: 1vh; /* Alterado para vh */
+}
+
+.imagem-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1vh; /* Alterado para vh */
+}
+
+.imagem-wrapper img {
+  max-width: 100%;
+  height: auto;
+  width: 30vh; /* Alterado para vh */
+}
+
+.equipamentosusados,
+.equipamento,
+.paraqueserve,
+.utilidade,
+.contraindicacao {
+  background-color: #fff;
+  color: #333;
+  padding: 1vh;
+  margin-bottom: 1vh; /* Alterado para vh */
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1vh; /* Alterado para vh */
+}
+
+table th,
+table td {
+  padding: 0.8vh; /* Alterado para vh */
+  border: 1px solid #ccc;
+}
+
+table th {
+  background-color: #f2f2f2;
+  font-weight: bold;
+}
+
+table tbody tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+table tbody tr:hover {
+  background-color: #ebebeb;
+}
+
+.images-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(15vh, 1fr)); /* Alterado para vh */
+  grid-gap: 2vh;
+  margin-bottom: 2vh;
+}
+
+.image-description {
+  text-align: center;
+}
+
+.image-description img {
+  max-width: 100%;
+  height: auto;
+  width: 10vh; /* Alterado para vh */
+}
+
+.image-description p {
+  margin: 0;
+  padding-top: 1vh; /* Alterado para vh */
+}
+
+.resultados {
+  background-color: #fff;
+  color: #333;
+  padding: 1vh;
+  margin-bottom: 2vh;
+}
+
+.resultado-item {
+  margin-bottom: 1vh; /* Alterado para vh */
+}
+
+.resultado-titulo {
+  font-weight: bold;
+}
+
+.resultado-descricao {
+  margin-top: 0.5vh; /* Alterado para vh */
+}
+
+.resultados table {
+  margin-top: 2vh;
+}
+
+.resultados table th,
+.resultados table td {
+  padding: 0.8vh; /* Alterado para vh */
+  border: 1px solid #ccc;
+}
+
+.resultados table th {
+  background-color: #f2f2f2;
+  font-weight: bold;
+}
+
+.resultados table tbody tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.resultados table tbody tr:hover {
+  background-color: #ebebeb;
+}
+
+.botao-navegacao {
+  display: flex;
+  justify-content: center;
+  margin-top: 2vh;
+}
+
+.botao-navegacao button {
+  padding: 1vh 2vh; /* Alterado para vh */
+  font-size: 1.6vh; /* Alterado para vh */
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-right: 1vh; /* Alterado para vh */
+}
+
+.botao-navegacao button:last-child {
+  margin-right: 0;
+}
+
+.botao-navegacao button:hover {
+  background-color: #0056b3;
+}
+
+/* Estilos do registro.component.css */
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+
+header {
+  background-color: #000;
+  color: #fff;
+  padding: 1vh; /* Alterado para vh */
+}
+
+header ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+header ul li {
+  display: inline-block;
+  margin-right: 1vh; /* Alterado para vh */
+}
+
+header ul li a {
+  text-decoration: none;
+  color: #fff;
+  padding: 0.5vh; /* Alterado para vh */
+}
+
+header ul li a:hover {
+  background-color: #fff;
+  color: #000;
+}
+
+main {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffbb00; /* Fundo amarelo */
+}
+
+footer {
+  background-color: #000;
+  color: #fff;
+  padding: 1vh; /* Alterado para vh */
+  text-align: center;
+  margin-top: auto; /* Adicionado para fixar o rodapé na parte inferior */
+}
+
+/* Estilos adicionais para o componente de registro */
+.registro-form {
+  background-color: #fff;
+  padding: 2vh;
+  margin: 2vh;
+}
+
+.registro-form table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.registro-form table td {
+  padding: 1vh;
+  border: 1px solid #000;
+}
+
+.registro-form table th {
+  padding: 1vh;
+  border: 1px solid #000;
+  background-color: #000;
+  color: #fff;
+}
+
+.registro-form button[type="submit"] {
+  background-color: #000;
+  color: #fff;
+  border: none;
+  padding: 1vh 2vh; /* Alterado para vh */
+  border-radius: 4px;
+  cursor: pointer;
+}

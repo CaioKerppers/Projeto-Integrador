@@ -1,0 +1,99 @@
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+  }
+  
+  header {
+    background-color: #000;
+    color: #fff;
+    padding: 10px;
+  }
+  
+  header ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  header ul li {
+    display: inline-block;
+    margin-right: 10px;
+  }
+  
+  header ul li a {
+    text-decoration: none;
+    color: #fff;
+    padding: 5px;
+  }
+  
+  header ul li a:hover {
+    background-color: #fff;
+    color: #000;
+  }
+  
+  main {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffbb00; /* Fundo amarelo */
+  }
+  
+  footer {
+    background-color: #000;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    margin-top: auto; /* Adicionado para fixar o rodapé na parte inferior */
+  }
+  
+  /* Estilos adicionais para o componente de login */
+  .login-form {
+    background-color: #fff;
+    padding: 20px;
+    margin: 20px;
+  }
+  
+  .login-form table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .login-form table th,
+  .login-form table td {
+    padding: 12px;
+    border: 1px solid #ccc;
+    text-align: left;
+  }
+  
+  .login-form table th {
+    background-color: #000;
+    color: #fff;
+  }
+  
+  .login-form table td input {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .login-form button[type="submit"] {
+    background-color: #000;
+    color: #fff;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  

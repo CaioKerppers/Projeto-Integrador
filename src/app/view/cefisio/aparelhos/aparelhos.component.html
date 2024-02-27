@@ -1,0 +1,6 @@
+<div class="aparelho-card" *ngFor="let aparelho of aparelhos">
+    <img [src]="aparelho.imagem" [alt]="aparelho.nome">
+    <h3>{{ aparelho.nome }}</h3>
+    <p>{{ aparelho.descricao }}</p>
+  </div>
+  

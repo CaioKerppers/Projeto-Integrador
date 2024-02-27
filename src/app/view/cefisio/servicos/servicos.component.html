@@ -1,0 +1,131 @@
+<div class="aparelhos">
+  <div class="aparelho-card">
+    <div class="nome-aparelho">{{ aparelhos[indiceAtual].nome }}</div>
+    <div class="imagem-wrapper">
+      <img src="{{ aparelhos[indiceAtual].imagem }}" alt="Aparelho {{ indiceAtual + 1 }}">
+    </div>
+    <p>{{ aparelhos[indiceAtual].descricao }}</p>
+    <div class="equipamentosusados">{{ aparelhos[indiceAtual].equipamentosusados }}</div>
+    <div class="equipamento">
+      <ng-container *ngFor="let line of splitLines(aparelhos[indiceAtual].equipamentos)">{{ line }}</ng-container>
+    </div>
+    <div class="paraqueserve">{{ aparelhos[indiceAtual].paraqueserve }}</div>
+    <div class="utilidade">{{ aparelhos[indiceAtual].utilidade }}</div>
+    <div class="contraindicacao">{{ aparelhos[indiceAtual].contraindicacao }}</div>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Contraindicação</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>{{ aparelhos[indiceAtual].indicacao1 }}</td>
+        </tr>
+        <tr>
+          <td>{{ aparelhos[indiceAtual].indicacao2 }}</td>
+        </tr>
+        <tr>
+          <td>{{ aparelhos[indiceAtual].indicacao3 }}</td>
+        </tr>
+        <tr>
+          <td>{{ aparelhos[indiceAtual].indicacao4 }}</td>
+        </tr>
+        <tr>
+          <td>{{ aparelhos[indiceAtual].indicacao5 }}</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <div class="images-grid">
+      <div class="image-description">
+        <img src="{{ aparelhos[indiceAtual].img1 }}" alt="Jejum">
+        <p>{{ aparelhos[indiceAtual].descimg1 }}</p>
+      </div>
+      <div class="image-description">
+        <img src="{{ aparelhos[indiceAtual].img2 }}" alt="Fumar">
+        <p>{{ aparelhos[indiceAtual].descimg2 }}</p>
+      </div>
+      <div class="image-description">
+        <img src="{{ aparelhos[indiceAtual].img3 }}" alt="Beber">
+        <p>{{ aparelhos[indiceAtual].descimg3 }}</p>
+      </div>
+      <div class="image-description">
+        <img src="{{ aparelhos[indiceAtual].img4 }}" alt="Confortável">
+        <p>{{ aparelhos[indiceAtual].descimg4 }}</p>
+      </div>
+    </div>
+    <div class="resultados" *ngIf="indiceAtual === 0">
+      <div class="resultado-item">
+        <div class="resultado-titulo">{{aparelhos[indiceAtual].result1}}</div>
+        <div class="resultado-descricao">{{ aparelhos[indiceAtual].result1ex }}</div>
+      </div>
+      <div class="resultado-item">
+        <div class="resultado-titulo">{{aparelhos[indiceAtual].importa}}</div>
+        <div class="resultado-descricao">{{ aparelhos[indiceAtual].importante }}</div>
+      </div>
+      <div class="resultado-item">
+        <div class="resultado-titulo">{{aparelhos[indiceAtual].result2}}</div>
+        <div class="resultado-descricao">{{ aparelhos[indiceAtual].result2ex }}</div>
+      </div>
+      <div class="resultado-item">
+        <div class="resultado-titulo">{{aparelhos[indiceAtual].result3}}</div>
+        <div class="resultado-descricao">{{ aparelhos[indiceAtual].result3ex }}</div>
+      </div>
+      <div class="resultado-item">
+        <div class="resultado-titulo">{{aparelhos[indiceAtual].result4}}</div>
+        <div class="resultado-descricao">{{ aparelhos[indiceAtual].result4ex }}</div>
+      </div>
+      <div class="resultado-item">
+        <div class="resultado-titulo">{{aparelhos[indiceAtual].pos_teste}}</div>
+        <div class="resultado-descricao">{{ aparelhos[indiceAtual].dica1 }}</div>
+        <div class="resultado-descricao">{{ aparelhos[indiceAtual].dica2 }}</div>
+        <div class="resultado-descricao">{{ aparelhos[indiceAtual].dica3 }}</div>
+      </div>
+    </div>
+    
+    <div class="resultados" *ngIf="indiceAtual === 1">
+      <table>
+        <thead>
+          <tr>
+            <th>Resultados</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>{{aparelhos[indiceAtual].result1}}</td>
+          </tr>
+          <tr>
+            <td>{{ aparelhos[indiceAtual].result1ex }}</td>
+          </tr>
+          <tr>
+            <td>{{aparelhos[indiceAtual].restul2}}</td>
+          </tr>
+          <tr>
+            <td>{{ aparelhos[indiceAtual].result2ex }}</td>
+          </tr>
+          <tr>
+            <td>{{aparelhos[indiceAtual].result3}}</td>
+          </tr>
+          <tr>
+            <td>{{ aparelhos[indiceAtual].result3ex }}</td>
+          </tr>
+        </tbody>
+      </table>
+    
+      <div class="resultado-item">
+        <div class="resultado-titulo">{{aparelhos[indiceAtual].pos_teste}}</div>
+        <div class="resultado-descricao">{{ aparelhos[indiceAtual].dica1 }}</div>
+        <div class="resultado-descricao">{{ aparelhos[indiceAtual].dica2 }}</div>
+        <div class="resultado-descricao">{{ aparelhos[indiceAtual].dica3 }}</div>
+      </div>
+    </div>
+    
+    
+    <div class="botao-navegacao">
+      <button (click)="exibirAparelhoAnterior()">Anterior</button>
+      <button (click)="exibirProximoAparelho()">Próximo</button>
+    </div>
+  </div>
+</div>

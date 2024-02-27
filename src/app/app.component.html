@@ -1,0 +1,24 @@
+<!-- eslint-disable @angular-eslint/template/interactive-supports-focus -->
+<div class="container">
+  <header>
+    <nav>
+      <div class="nav-header">
+        <ul class="nav-list" >
+          <li><a routerLink="/">Início</a></li>
+          <li><a routerLink="/servicos">Serviços</a></li>
+          <li><a routerLink="/sobre">Sobre</a></li>
+          <!--<li><a href="/contato">Contato</a></li>-->
+          <li><a routerLink="/login">Login</a></li>
+          <li><a routerLink="/registro">Cadastro</a></li>
+          <li><a (click)="logout()" (keyup)="logout()" style="cursor: pointer;">Logout</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <router-outlet></router-outlet>
+  
+  <footer>
+    <p>&copy; 2023</p>
+  </footer>
+</div>

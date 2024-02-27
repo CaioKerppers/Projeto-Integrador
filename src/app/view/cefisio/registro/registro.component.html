@@ -1,0 +1,29 @@
+<div class="registro-form">
+  <h2>Formulário de Registro</h2>
+  <form (submit)="registrar()">
+    <table>
+      <tr>
+        <th><label for="nome">Nome:</label></th>
+        <td><input type="text" id="nome" [(ngModel)]="registro.nome" name="nome" required></td>
+      </tr>
+      <tr>
+        <th><label for="email">Email:</label></th>
+        <td><input type="email" id="email" [(ngModel)]="registro.email" name="email" required></td>
+      </tr>
+      <tr>
+        <th><label for="senha">Senha:</label></th>
+        <td><input type="password" id="senha" [(ngModel)]="registro.senha" name="senha" required></td>
+      </tr>
+      <tr>
+        <th><label for="tipo">Tipo:</label></th>
+        <td>
+          <select id="tipo" [(ngModel)]="registro.tipo" name="tipo" required>
+            <option value="">Selecione um tipo</option>
+            <option *ngFor="let tipo of tipos" [value]="tipo">{{ tipo }}</option>
+          </select>
+        </td>
+      </tr>
+    </table>
+    <button type="submit">Registrar</button>
+  </form>
+</div>
